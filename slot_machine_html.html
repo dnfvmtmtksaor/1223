@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬롯머신 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">🎰 슬롯머신 게임</h1>
+        
+        <div class="score-board">
+            <div class="score">
+                <span>코인: </span>
+                <span id="coins">1000</span>
+            </div>
+            <div class="bet">
+                <span>베팅: </span>
+                <span id="bet-amount">10</span>
+            </div>
+        </div>
+
+        <div class="slot-machine">
+            <div class="reel" id="reel1">🍎</div>
+            <div class="reel" id="reel2">🍊</div>
+            <div class="reel" id="reel3">🍌</div>
+        </div>
+
+        <div class="controls">
+            <div class="bet-controls">
+                <button id="bet-minus">-</button>
+                <span>베팅 금액</span>
+                <button id="bet-plus">+</button>
+            </div>
+            <button id="spin-btn" class="spin-button">스핀!</button>
+        </div>
+
+        <div class="message" id="message">행운을 빌어요! 🍀</div>
+
+        <div class="rules">
+            <h3>게임 규칙</h3>
+            <p>🍎🍎🍎 = 베팅 x 10</p>
+            <p>🍊🍊🍊 = 베팅 x 5</p>
+            <p>🍌🍌🍌 = 베팅 x 3</p>
+            <p>두 개 같음 = 베팅 x 2</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
